@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg-base:   #0A0A0A;
+  --bg-card:   #111111;
+  --bg-border: #1A1A1A;
+
+  --gold-primary: #C9A84C;
+  --gold-light:   #E8C97A;
+  --gold-soft:    #F5DFA0;
+
+  --brown-dark: #3D2B1F;
+  --brown-mid:  #6B4C35;
+
+  --text-primary: #F5F0E8;
+  --text-muted:   #A89880;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-base text-primary font-body; }
+}
