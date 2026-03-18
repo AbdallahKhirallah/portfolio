@@ -6,7 +6,7 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi'
 export default function Projects() {
   return (
     <section id="projects" className="py-24 px-6 md:px-16 lg:px-32">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl">
         <SectionHeading number="02" title="Projects" />
       </div>
 
