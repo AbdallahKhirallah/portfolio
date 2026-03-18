@@ -24,7 +24,7 @@ export default function Projects() {
             </div>
             <div className="flex gap-4">
               <a href={project.github} className="text-muted hover:text-gold transition-colors"><FiGithub size={18} /></a>
-              <a href={project.live} className="text-muted hover:text-gold transition-colors"><FiExternalLink size={18} /></a>
+              {project.live && <a href={project.live} className="text-muted hover:text-gold transition-colors"><FiExternalLink size={18} /></a>}
             </div>
             
           </div>
