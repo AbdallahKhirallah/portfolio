@@ -15,6 +15,7 @@ export default {
           DEFAULT: 'var(--gold-primary)',
           light:   'var(--gold-light)',
           soft:    'var(--gold-soft)',
+          vivid:   'var(--gold-vivid)',
         },
         brown: {
           dark: 'var(--brown-dark)',

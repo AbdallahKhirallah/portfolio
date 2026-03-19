@@ -5,8 +5,8 @@ import skills from '../data/skills'
 export default function Skills() {
   return (
     <section id="skills" className="py-24 px-6 md:px-16 lg:px-32">
+      <SectionHeading number="03" title="Skills" />
       <div className="max-w-4xl">
-        <SectionHeading number="03" title="Skills" />
         <div className="grid sm:grid-cols-2 gap-8">
 
           {Object.entries(skills).map(([category, items]) => ( // converting object to array of [key, value] pairs ([Frameworks, [Node.js, Express.js ...] ])

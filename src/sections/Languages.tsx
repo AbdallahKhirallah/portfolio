@@ -13,8 +13,8 @@ const TOTAL_BLOCKS = 5
 export default function Languages() {
   return (
     <section id="languages" className="py-24 px-6 md:px-16 lg:px-32">
+      <SectionHeading number="04" title="Languages" />
       <div className="max-w-4xl">
-        <SectionHeading number="04" title="Languages" />
         <div className="flex flex-col gap-6">
           {languages.map(({ name, blocks }) => (
             <div key={name} className="flex items-center gap-6">

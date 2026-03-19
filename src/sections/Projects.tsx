@@ -6,9 +6,7 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi'
 export default function Projects() {
   return (
     <section id="projects" className="py-24 px-6 md:px-16 lg:px-32">
-      <div className="max-w-4xl">
-        <SectionHeading number="02" title="Projects" />
-      </div>
+      <SectionHeading number="02" title="Projects" />
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {projects.map((project) => (
