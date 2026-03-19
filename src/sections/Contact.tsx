@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 px-6 md:px-16 lg:px-32">
       <div className="max-w-2xl mx-auto text-center">
-        <SectionHeading number="04" title="Get In Touch" />
+        <SectionHeading number="05" title="Get In Touch" />
         <p className="font-body text-muted text-lg leading-relaxed mb-10">
           Currently seeking a Winter 2027 internship. Whether you have an opportunity or just want to connect, my inbox is always open.
         </p>
