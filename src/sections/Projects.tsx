@@ -12,7 +12,7 @@ export default function Projects() {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="bg-card border border-border rounded-lg p-6 flex flex-col gap-4 hover:border-gold transition-colors duration-200"
+            className="bg-card border border-border rounded-lg p-6 flex flex-col gap-4 hover:border-gold hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
           >
 
             <h3 className="font-display text-xl font-semibold text-primary">{project.title}</h3>
