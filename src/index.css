@@ -77,6 +77,11 @@ body::before {
   width: 100%;
 }
 
+/* Orange glow on project cards in dark mode */
+:root.dark .project-card:hover {
+  box-shadow: 0 8px 24px 0px rgba(212, 114, 74, 0.3), 0 2px 8px 0px rgba(212, 114, 74, 0.15);
+}
+
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }

@@ -17,7 +17,7 @@ export default function About() {
             I care about software that works for real people, fast, clean, and without making anyone feel stupid. Nothing frustrates me more than a sluggish, ugly app. If I'm annoyed by it, I'm probably already thinking about how I'd fix it.
           </p>
           <p>
-            Outside of code I'm a cyclist and swimmer since childhood, both are just me and the effort, no shortcuts. I also have a weird obsession with political debates, not because I have all the answers, but because I love watching people defend ideas with everything they've got. And when I need to slow down completely, I draw realistic portraits with graphite.
+            Outside of code I'm a cyclist and swimmer since childhood, both are just me and the effort, no shortcuts. And when I need to slow down completely, I draw realistic portraits with graphite.
           </p>
           <p>
             Right now I'm looking for an internship where the work is real, the problems are hard, and the goal is to build something people actually use.

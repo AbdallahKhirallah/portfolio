@@ -80,7 +80,7 @@ export default function Navbar() {
             {isDark ? <FiSun size={18} /> : <FiMoon size={18} />}
           </button>
 
-          {/* Hamburger button (FiMenu), visible only on mobile */}
+          {/* Hamburger (FiMenu) button, visible only on mobile (hidden on md+) */}
           <button
             className="md:hidden text-primary hover:text-gold transition-colors"
             onClick={() => setIsOpen(true)}
@@ -120,6 +120,9 @@ export default function Navbar() {
               <a
                 href={href}
                 onClick={() => setIsOpen(false)}
+
+              // Conditionally apply classes based on whether this link is the active section
+              // ex: "#about" === "#about" -> true -> gold + bold
                 className={`nav-link font-display text-lg transition-colors ${active === href ? 'text-gold font-semibold active' : 'text-primary hover:text-gold'}`}
               >
                 {label}
