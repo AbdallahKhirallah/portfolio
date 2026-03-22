@@ -54,7 +54,7 @@ export default function Navbar() {
               href={href}
               // Conditionally apply classes based on whether this link is the active section
               // ex: "#about" === "#about" -> true -> gold + bold
-              className={`font-body text-sm transition-colors ${active === href ? 'text-gold font-semibold' : 'text-muted hover:text-gold'}`}
+              className={`nav-link font-body text-sm transition-colors ${active === href ? 'text-gold font-semibold active' : 'text-muted hover:text-gold'}`}
             >
               {label}
             </a>

@@ -5,7 +5,7 @@ import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
 const email = 'thekiralla@gmail.com'
 const links = {
   github: 'https://github.com/AbdallahKhirallah',
-  linkedin: 'https://www.linkedin.com/in/abdallah-khirallah-20b0b326b/',
+  linkedin: 'https://www.linkedin.com/in/abdallahkhirallah/',
   resume: '',
 }
 
