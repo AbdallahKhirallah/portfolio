@@ -17,11 +17,31 @@
 
   --text-primary: #1C1510;
   --text-muted:   #6B5A44;
+  --footer-text:  #D4B896;
+}
+
+/* Dark mode CSS variables */
+:root.dark {
+  --bg-base:   #0F0D0B;
+  --bg-card:   #1C1814;
+  --bg-border: #2E2820;
+
+  --gold-primary: #D4724A;
+  --gold-light:   #E08A65;
+  --gold-soft:    #EAA880;
+  --gold-vivid:   #D4724A;
+
+  --brown-dark: #2A1F18;
+  --brown-mid:  #3D2E24;
+
+  --text-primary: #E8DDD0;
+  --text-muted:   #A89078;
+  --footer-text:  #F2EDE4;
 }
 
 @layer base {
   html { scroll-behavior: smooth; }
-  body { @apply bg-base text-primary font-body; }
+  body { @apply bg-base text-primary font-body; overflow-x: hidden; }
 }
 
 /* Grain texture overlay
@@ -37,9 +57,8 @@ body::before {
   background-size: 150px 150px;
 }
 
-/* Navbar underline animation — expands from left to right on hover/active.
-   ::after injects a virtual element after the link text.
-   width goes from 0 to 100% of the link's width, creating the slide effect. */
+/* Navbar underline animation, expands from left to right on hover/active
+   width goes from 0 to 100% of the link's width */
 .nav-link {
   position: relative;
 }
