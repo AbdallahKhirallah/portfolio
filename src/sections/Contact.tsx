@@ -15,7 +15,9 @@ export default function Contact() {
       <div className="max-w-2xl mx-auto text-center">
         <SectionHeading number="05" title="Get In Touch" />
         <p className="font-body text-muted text-lg leading-relaxed mb-10">
-          Currently seeking a Winter 2027 internship. Whether you have an opportunity or just want to connect, my inbox is always open.
+          Currently seeking a{' '}
+          <span className="shimmer-text font-display italic">Winter 2027 internship</span>
+          . Whether you have an opportunity or just want to connect, my inbox is always open.
         </p>
         <a
           href={`mailto:${email}`}

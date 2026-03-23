@@ -18,6 +18,8 @@
   --text-primary: #1C1510;
   --text-muted:   #6B5A44;
   --footer-text:  #D4B896;
+  --shimmer-base: #6B2A0E;
+  --shimmer-highlight: #C4622D;
 }
 
 /* Dark mode CSS variables */
@@ -37,11 +39,14 @@
   --text-primary: #E8DDD0;
   --text-muted:   #A89078;
   --footer-text:  #F2EDE4;
+  --shimmer-base: #D4724A;
+  --shimmer-highlight: #F0A882;
 }
 
 @layer base {
   html { scroll-behavior: smooth; }
   body { @apply bg-base text-primary font-body; overflow-x: hidden; }
+  *, *::before, *::after { transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease; }
 }
 
 /* Grain texture overlay
@@ -80,6 +85,29 @@ body::before {
 /* Orange glow on project cards in dark mode */
 :root.dark .project-card:hover {
   box-shadow: 0 8px 24px 0px rgba(212, 114, 74, 0.3), 0 2px 8px 0px rgba(212, 114, 74, 0.15);
+}
+
+/* Gold gradient shimmer */
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    var(--shimmer-base)      0%,
+    var(--shimmer-base)      40%,
+    var(--shimmer-highlight) 50%,
+    var(--shimmer-base)      60%,
+    var(--shimmer-base)      100%
+  );
+  
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 6s linear infinite;
 }
 
 @keyframes fadeInUp {

@@ -6,7 +6,7 @@ const anim = (delay: number): CSSProperties => ({
 
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex flex-col justify-center items-center text-center px-6 md:px-16 lg:px-32 -mt-52">
+    <section id="hero" className="flex flex-col items-center text-center px-6 md:px-16 lg:px-32 pt-32 pb-24">
       <p className="text-gold font-body text-lg tracking-widest uppercase mb-4" style={anim(0)}>
         Hi, I'm
       </p>

@@ -1,8 +1,8 @@
 export default function About() {
   return (
-    <section id="about" className="pt-12 pb-24 px-6 md:px-16 lg:px-32">
+    <section id="about" className="pt-0 pb-24 px-6 md:px-16 lg:px-32">
       <h2
-        className="font-display text-3xl font-bold text-primary uppercase mb-10 block text-left origin-left"
+        className="font-display text-3xl font-bold text-primary uppercase mb-4 block text-left origin-left"
         style={{ transform: 'scaleX(1.3)' }}
       >
         About Me
@@ -24,11 +24,12 @@ export default function About() {
           </p>
         </div>
 
-        {/* Image placeholder*/}
-        <div className="flex justify-center lg:justify-end">
-          <div className="w-72 h-72 rounded-lg bg-card border border-border flex items-center justify-center text-muted font-body text-sm">
-            PHOTO
-          </div>
+        <div className="flex justify-center">
+          <img
+            src="https://github.com/AbdallahKhirallah.png"
+            alt="Abdallah Khirallah"
+            className="w-96 h-96 rounded-full object-cover ring-4 ring-gold ring-offset-4 ring-offset-base"
+          />
         </div>
 
       </div>
