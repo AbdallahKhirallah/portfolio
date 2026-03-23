@@ -52,7 +52,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="fixed top-0 w-full z-50 bg-base border-b border-border px-6 md:px-16 lg:px-32 h-16 flex items-center justify-between">
-        <a href="#hero" className="font-display font-bold text-primary hover:text-gold transition-colors">
+        <a href="#hero" className="font-display font-bold text-primary hover:text-gold transition-colors tracking-widest">
           ABDALLAH KHIRALLAH
         </a>
 

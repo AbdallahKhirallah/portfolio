@@ -1,8 +1,8 @@
 export default function About() {
   return (
-    <section id="about" className="pt-0 pb-24 px-6 md:px-16 lg:px-32">
+    <section id="about" className="pt-8 pb-24 px-6 md:px-16 lg:px-32">
       <h2
-        className="font-display text-3xl font-bold text-primary uppercase mb-4 block text-left origin-left"
+        className="font-display text-3xl font-bold text-primary uppercase mb-10 block text-left origin-left"
         style={{ transform: 'scaleX(1.3)' }}
       >
         About Me
@@ -14,7 +14,7 @@ export default function About() {
             I got into Computer Science at 18 with one simple bet: that this field was where the future was being written, and I wanted to be part of writing it. Turns out I was right, but what kept me here wasn't the promise of a career. It was the feeling of actually building something.
           </p>
           <p>
-            I care about software that works for real people, fast, clean, and without making anyone feel stupid. Nothing frustrates me more than a sluggish, ugly app. If I'm annoyed by it, I'm probably already thinking about how I'd fix it.
+            I care about software that works for real people, fast, clean, and without making anyone feel lost. Nothing frustrates me more than a sluggish, ugly app. If I'm annoyed by it, I'm probably already thinking about how I'd fix it.
           </p>
           <p>
             Outside of code I'm a cyclist and swimmer since childhood, both are just me and the effort, no shortcuts. And when I need to slow down completely, I draw realistic portraits with graphite.
@@ -29,7 +29,10 @@ export default function About() {
             src="https://github.com/AbdallahKhirallah.png"
             alt="Abdallah Khirallah"
             className="w-96 h-96 rounded-full object-cover"
-            style={{ boxShadow: '0 0 0 4px var(--gold-primary), 0 0 0 8px rgba(196, 98, 45, 0.2), 0 0 24px 8px rgba(196, 98, 45, 0.1)' }}
+            style={{
+              boxShadow: '0 0 0 4px var(--gold-primary), 0 0 0 8px rgba(196, 98, 45, 0.2), 0 0 24px 8px rgba(196, 98, 45, 0.1)',
+              animation: 'fadeInUp 1.2s ease 0.3s both',
+            }}
           />
         </div>
 

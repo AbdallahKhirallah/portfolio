@@ -46,7 +46,7 @@
 @layer base {
   html { scroll-behavior: smooth; }
   body { @apply bg-base text-primary font-body; overflow-x: hidden; }
-  *, *::before, *::after { transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease; }
+  *, *::before, *::after { transition: background-color 0.4s ease, color 0.05s ease, border-color 0.4s ease; }
 }
 
 /* Grain texture overlay
