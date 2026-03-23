@@ -21,8 +21,8 @@ export default function Projects() {
               {project.tags.map((tag) => <Tag key={tag} label={tag} />)}
             </div>
             <div className="flex gap-4">
-              <a href={project.github} className="text-muted hover:text-gold transition-colors"><FiGithub size={18} /></a>
-              {project.live && <a href={project.live} className="text-muted hover:text-gold transition-colors"><FiExternalLink size={18} /></a>}
+              <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-muted hover:text-gold transition-colors"><FiGithub size={18} /></a>
+              {project.live && <a href={project.live} target="_blank" rel="noopener noreferrer" className="text-muted hover:text-gold transition-colors"><FiExternalLink size={18} /></a>}
             </div>
             
           </div>

@@ -21,14 +21,14 @@ export default function Contact() {
         </p>
         <a
           href={`mailto:${email}`}
-          className="inline-block border border-gold text-gold font-display font-medium px-8 py-4 rounded hover:bg-gold hover:text-primary transition-colors duration-200"
+          className="inline-block border border-gold text-gold font-display font-medium tracking-widest uppercase px-16 py-5 rounded hover:bg-gold hover:text-primary transition-colors duration-300"
         >
           Say Hello
         </a>
 
         <div className="mt-16 flex justify-center gap-8 text-muted">
-          <a href={links.github} className="hover:text-gold transition-colors"><FiGithub size={23} /></a>
-          <a href={links.linkedin} className="hover:text-gold transition-colors"><FiLinkedin size={23} /></a>
+          <a href={links.github} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors"><FiGithub size={23} /></a>
+          <a href={links.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors"><FiLinkedin size={23} /></a>
           <a href={`mailto:${email}`} className="hover:text-gold transition-colors"><FiMail size={23} /></a>
         </div>
       </div>

@@ -28,7 +28,8 @@ export default function About() {
           <img
             src="https://github.com/AbdallahKhirallah.png"
             alt="Abdallah Khirallah"
-            className="w-96 h-96 rounded-full object-cover ring-4 ring-gold ring-offset-4 ring-offset-base"
+            className="w-96 h-96 rounded-full object-cover"
+            style={{ boxShadow: '0 0 0 4px var(--gold-primary), 0 0 0 8px rgba(196, 98, 45, 0.2), 0 0 24px 8px rgba(196, 98, 45, 0.1)' }}
           />
         </div>
 
